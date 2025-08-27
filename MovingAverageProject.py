@@ -1,6 +1,12 @@
 import yfinance as yf
 import backtrader as bt 
 
+# make sure you have the virtual environment set up when you want to run the code
+# to create it in terminal: python3 -m venv .venv
+# activating it in terminal: source .venv/bin/activate
+# make sure you also have installed the proper packages: pip install yfinance backtrader matplotlib pandas
+
+
 class MovingAverageStrategy(bt.Strategy) :
     def __init__(self) :
         self.ma_shorts = {}
